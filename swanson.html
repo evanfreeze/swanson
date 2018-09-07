@@ -1,10 +1,14 @@
-<title>Swanson New Tab</title>
-<div>
+<title>New Tab</title>
+<div id="ron">
   <h1 id="quote">Loading quote...</h1>
   <img src="ron.png" alt="Ron" />
 </div>
+<div id="footer">
+  <p>Built by <a href="https://www.github.com/evanfreeze">Evan Freeze</a>, <a href="https://github.com/jdgazlay">Jerimiah Gazlay</a>, and <a href="https://github.com/espight">Evan Spight</a></p>
+  <p>Quotes powered by <a href="https://github.com/jamesseanwright/ron-swanson-quotes">jamesseanwright</a> &bull; <a href="https://www.kisspng.com/png-ron-swanson-parks-and-recreation-pawnee-character-1966144/">Ron Swanson image credit</a></p>
+</div>
 <style>
-  div {
+  #ron {
     display: flex; align-items: center; justify-content: center;
   }
   h1 {
@@ -17,6 +21,26 @@
   }
   img {
     transform: scale(0.6)
+  }
+  #footer {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 97%;
+    bottom: 10px;
+    margin: 0;
+    padding: 0 20px;
+    color: #aaa;
+  }
+
+  #footer a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #footer a:visited {
+    color: #222;
+    text-decoration: none;
   }
 </style>
 <script src="app.js"></script>
